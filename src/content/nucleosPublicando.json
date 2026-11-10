@@ -1,0 +1,39 @@
+{
+  "itens": [
+    {
+      "semestre": "2026/1",
+      "nucleos": [
+        {
+          "nome": "Fundos de Investimento",
+          "linhaPesquisa": "Estrutura jurídica e regulação dos fundos de investimento no Brasil, com enfoque na Resolução CVM 175",
+          "edicaoNumero": 1
+        },
+        {
+          "nome": "Contencioso Societário",
+          "linhaPesquisa": "Técnicas processuais e estratégias no contencioso societário",
+          "edicaoNumero": null
+        },
+        {
+          "nome": "Reestruturação no Agronegócio",
+          "linhaPesquisa": "Reestruturação empresarial no agronegócio: desafios, oportunidades e perspectivas regulatórias",
+          "edicaoNumero": null
+        },
+        {
+          "nome": "Fusões e Aquisições",
+          "linhaPesquisa": "Cláusulas contratuais em operações de fusões e aquisições: alocação de riscos, governança e enforcement",
+          "edicaoNumero": null
+        },
+        {
+          "nome": "Insolvência Empresarial e Estabilidade do Sistema Econômico",
+          "linhaPesquisa": "Insolvência empresarial como instrumento de preservação da atividade econômica e mitigação de risco sistêmico",
+          "edicaoNumero": null
+        },
+        {
+          "nome": "Procedimento Arbitral",
+          "linhaPesquisa": "Estrutura, estratégia e efetividade do procedimento arbitral em conflitos empresariais",
+          "edicaoNumero": null
+        }
+      ]
+    }
+  ]
+}

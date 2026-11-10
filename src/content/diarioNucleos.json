@@ -1,0 +1,22 @@
+{
+  "itens": [
+    {
+      "tipo": "comentario",
+      "data": "2026-06-18",
+      "texto": "[Comentário do coordenador sobre o processo de produção dos resumos expandidos do núcleo neste ciclo.]",
+      "autor": "Caio Oliveira"
+    },
+    {
+      "tipo": "encontro",
+      "data": "2026-05-30",
+      "texto": "[Relato sobre o panorama apresentado no encontro inaugural do núcleo: a linha de pesquisa proposta e as primeiras impressões dos integrantes.]",
+      "autor": "[Nome do convidado]"
+    },
+    {
+      "tipo": "atualizacao",
+      "data": "2026-05-10",
+      "texto": "[Atualização simples sobre o andamento da produção: quantos resumos em revisão, próximos passos.]",
+      "autor": null
+    }
+  ]
+}

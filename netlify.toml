@@ -1,0 +1,28 @@
+# Configuração de publicação na Netlify (o site é gerado com `npm run build`).
+[build]
+  command = "npm run build"
+  publish = "dist"
+
+[build.environment]
+  NODE_VERSION = "22"
+  # Em Site configuration > Environment variables, defina também:
+  #   VITE_SITE_URL = https://seu-dominio.com.br   (usado em sitemap, canonical e redes sociais)
+
+# O site é uma aplicação de página única: qualquer endereço abre o index.html
+# (arquivos que existem, como /admin/, são servidos normalmente).
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+
+# Arquivos gerados pelo build têm nome com hash: podem ficar em cache por muito tempo.
+[[headers]]
+  for = "/assets/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+# O painel de edição não deve aparecer em buscadores.
+[[headers]]
+  for = "/admin/*"
+  [headers.values]
+    X-Robots-Tag = "noindex"

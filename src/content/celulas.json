@@ -1,0 +1,43 @@
+{
+  "itens": [
+    {
+      "cidade": "Porto Alegre",
+      "foto": "/celulas/porto-alegre.png",
+      "membros": "15+",
+      "embaixadores": [
+        "[Nome do embaixador]"
+      ],
+      "eventos": [
+        {
+          "data": "2026-09-02",
+          "titulo": "Encontro Horizontal com Rodrigo Tellechea",
+          "descricao": "Na sede do Souto Correa Advogados, o professor Rodrigo Tellechea apresentou aos membros o conteúdo de seu livro O Paradoxo da Falência."
+        }
+      ]
+    },
+    {
+      "cidade": "Salvador",
+      "foto": "/celulas/salvador.png",
+      "membros": "15+",
+      "embaixadores": [
+        "[Nome do embaixador]"
+      ],
+      "eventos": [
+        {
+          "data": "2026-09-16",
+          "titulo": "Consentimento arbitral e sucessão societária",
+          "descricao": "Na sede do Cescon Barrieu Advogados, os professores Gabriel Seijo e Técio Spínola discutiram os limites à vinculação do sucessor em operações de sucessão societária."
+        }
+      ]
+    },
+    {
+      "cidade": "Rio de Janeiro",
+      "foto": "/celulas/rio-de-janeiro.png",
+      "membros": "15+",
+      "embaixadores": [
+        "[Nome do embaixador]"
+      ],
+      "eventos": []
+    }
+  ]
+}

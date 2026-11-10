@@ -1,0 +1,26 @@
+{
+  "name": "quota-parte",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "predev": "npm run imagens",
+    "build": "vite build",
+    "prebuild": "npm run imagens",
+    "preview": "vite preview",
+    "imagens": "node scripts/converter-imagens.mjs",
+    "validar-painel": "node scripts/validar-painel.mjs",
+    "cms": "npx decap-server"
+  },
+  "dependencies": {
+    "vue": "^3.4.21",
+    "vue-router": "^4.3.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^5.0.4",
+    "sharp": "^0.35.5",
+    "vite": "^5.2.0",
+    "yaml": "^2.9.1"
+  }
+}

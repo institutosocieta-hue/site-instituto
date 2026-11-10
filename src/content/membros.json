@@ -1,0 +1,270 @@
+{
+  "efetivos": [
+    {
+      "nome": "Pedro Vieira",
+      "completo": "Pedro Vieira",
+      "ingresso": "2026/1",
+      "nucleo": null,
+      "foto": "/diretoria/pedro-vieira.png",
+      "linkedin": null
+    },
+    {
+      "nome": "Matheus Gonçalves",
+      "completo": "Matheus Petry Gonçalves",
+      "ingresso": "2026/1",
+      "nucleo": null,
+      "foto": "/diretoria/matheus-goncalves.png",
+      "linkedin": null
+    },
+    {
+      "nome": "Maísa Campos",
+      "completo": "Maísa Campos Bezerra",
+      "ingresso": "2026/1",
+      "nucleo": "Fusões e Aquisições",
+      "foto": "/diretoria/maisa-campos.png",
+      "linkedin": null
+    },
+    {
+      "nome": "Eloísa Eckert",
+      "completo": "Eloísa Barichello Eckert",
+      "ingresso": "2026/1",
+      "nucleo": null,
+      "foto": "/diretoria/eloisa-eckert.png",
+      "linkedin": null
+    },
+    {
+      "nome": "Antônio Macêdo",
+      "completo": "Antônio Macêdo",
+      "ingresso": "2026/1",
+      "nucleo": null,
+      "foto": "/diretoria/antonio-macedo.png",
+      "linkedin": null
+    },
+    {
+      "nome": "Maria Eugênia Fachone",
+      "completo": "Maria Eugênia Fachone Soares",
+      "ingresso": "2026/1",
+      "nucleo": null,
+      "foto": "/diretoria/maria-eugenia-fachone.png",
+      "linkedin": null
+    },
+    {
+      "nome": "João Victor Bezerra",
+      "completo": "João Victor Rosa do Nascimento Bezerra",
+      "ingresso": "2026/1",
+      "nucleo": null,
+      "foto": null,
+      "linkedin": null
+    },
+    {
+      "nome": "Maria Clara Scrivano",
+      "completo": "Maria Clara Scrivano Martins Santa Bárbara",
+      "ingresso": "2026/1",
+      "nucleo": null,
+      "foto": "/diretoria/maria-clara-scrivano.png",
+      "linkedin": null
+    },
+    {
+      "nome": "Caio Oliveira",
+      "completo": "Caio Gabriel Oliveira",
+      "ingresso": "2025/2",
+      "nucleo": "Mercado de Capitais",
+      "foto": "/diretoria/caio-oliveira.png",
+      "linkedin": null
+    },
+    {
+      "nome": "Isabella Melo",
+      "completo": "Isabella Visioli Melo",
+      "ingresso": "2025/2",
+      "nucleo": "Mercado de Capitais",
+      "foto": "/diretoria/isabella-melo.png",
+      "linkedin": null
+    },
+    {
+      "nome": "Larissa Del Lhano",
+      "completo": "Larissa Almeida Del Lhano",
+      "ingresso": "2025/2",
+      "nucleo": null,
+      "foto": "/diretoria/larissa-del-lhano.png",
+      "linkedin": null
+    },
+    {
+      "nome": "Laura Telles",
+      "completo": "Laura Fernanda Souza Santos Teles",
+      "ingresso": "2025/2",
+      "nucleo": null,
+      "foto": "/diretoria/laura-telles.png",
+      "linkedin": null
+    },
+    {
+      "nome": "Raissa Souza",
+      "completo": "Raíssa de Araújo Góes Souza",
+      "ingresso": "2025/2",
+      "nucleo": "Mercado de Capitais",
+      "foto": "/diretoria/raissa-souza.png",
+      "linkedin": null
+    },
+    {
+      "nome": "Thiago Teixeira",
+      "completo": "Thiago Bortolini Teixeira",
+      "ingresso": "2025/2",
+      "nucleo": "Contencioso Societário",
+      "foto": "/diretoria/thiago-teixeira.png",
+      "linkedin": null
+    },
+    {
+      "nome": "Estêvan Rigon",
+      "completo": "Estêvan Rigon Oliveira",
+      "ingresso": "2025/1",
+      "nucleo": null,
+      "foto": "/diretoria/estevan-rigon.png",
+      "linkedin": null
+    },
+    {
+      "nome": "Gabriel Falci",
+      "completo": "Gabriel Falci Mota",
+      "ingresso": "2025/1",
+      "nucleo": "Fusões e Aquisições",
+      "foto": "/diretoria/gabriel-falci.png",
+      "linkedin": null
+    },
+    {
+      "nome": "João Pedro Gonçalves",
+      "completo": "João Pedro Gonçalves Santos",
+      "ingresso": "2025/1",
+      "nucleo": null,
+      "foto": "/diretoria/joao-pedro-goncalves.png",
+      "linkedin": null
+    },
+    {
+      "nome": "Júlia Almeida",
+      "completo": "Julia Lopes de Almeida",
+      "ingresso": "2025/1",
+      "nucleo": null,
+      "foto": "/diretoria/julia-almeida.png",
+      "linkedin": null
+    },
+    {
+      "nome": "Lara Santiago",
+      "completo": "Lara Santiago de Barcellos",
+      "ingresso": "2025/1",
+      "nucleo": "Contencioso Societário",
+      "foto": "/diretoria/lara-santiago.png",
+      "linkedin": null
+    },
+    {
+      "nome": "Marcelo Soruco",
+      "completo": "Marcelo Gastal Soruco",
+      "ingresso": "2025/1",
+      "nucleo": null,
+      "foto": "/diretoria/marcelo-soruco.png",
+      "linkedin": null
+    },
+    {
+      "nome": "Maria Fernanda Barivieira",
+      "completo": "Maria Fernanda Zanetti Barivieira",
+      "ingresso": "2025/1",
+      "nucleo": "Insolvência Empresarial",
+      "foto": "/diretoria/maria-fernanda-barivieira.png",
+      "linkedin": null
+    },
+    {
+      "nome": "Mateus Honorato",
+      "completo": "Mateus Freitas Honorato de Lima",
+      "ingresso": "2025/1",
+      "nucleo": null,
+      "foto": "/diretoria/mateus-honorato.png",
+      "linkedin": null
+    },
+    {
+      "nome": "Matheus Mazzoni",
+      "completo": "Matheus Mazzoni Rocha",
+      "ingresso": "2025/1",
+      "nucleo": null,
+      "foto": "/diretoria/matheus-mazzoni.png",
+      "linkedin": null
+    },
+    {
+      "nome": "Pedro Puente",
+      "completo": "Pedro Puente",
+      "ingresso": "2025/1",
+      "nucleo": "Insolvência Empresarial",
+      "foto": "/diretoria/pedro-puente.png",
+      "linkedin": null
+    },
+    {
+      "nome": "Sofia Vollrath",
+      "completo": "Sofia Oliveira Vollrath",
+      "ingresso": "2025/1",
+      "nucleo": "Contencioso Societário",
+      "foto": "/diretoria/sofia-vollrath.png",
+      "linkedin": null
+    },
+    {
+      "nome": "Valentina Duarte",
+      "completo": "Valentina de Avelar Duarte",
+      "ingresso": "2025/1",
+      "nucleo": "Insolvência Empresarial",
+      "foto": "/diretoria/valentina-duarte.png",
+      "linkedin": null
+    },
+    {
+      "nome": "Vitória Richetti",
+      "completo": "Vitoria Richetti",
+      "ingresso": "2025/1",
+      "nucleo": "Fusões e Aquisições",
+      "foto": "/diretoria/vitoria-richetti.png",
+      "linkedin": null
+    }
+  ],
+  "transitorios": [
+    {
+      "nome": "Arthur de Carvalho Fernandes",
+      "ingresso": "2026/2"
+    },
+    {
+      "nome": "Enzo Ferro Martioro",
+      "ingresso": "2026/2"
+    },
+    {
+      "nome": "Gabriel Novis Neves Neto",
+      "ingresso": "2026/2"
+    },
+    {
+      "nome": "João Guilherme Miranda Halla",
+      "ingresso": "2026/2"
+    },
+    {
+      "nome": "Luciana Carvalho Dal Piaz",
+      "ingresso": "2026/2"
+    },
+    {
+      "nome": "Maria Beatriz Furtado Schaer Santos",
+      "ingresso": "2026/2"
+    },
+    {
+      "nome": "Mateus Rech Graciano dos Santos",
+      "ingresso": "2026/2"
+    },
+    {
+      "nome": "Thiago Neves da Rocha de Souza",
+      "ingresso": "2026/2"
+    },
+    {
+      "nome": "Yasmim Alves",
+      "ingresso": "2026/2"
+    },
+    {
+      "nome": "Eduardo Cerqueira Sodré",
+      "ingresso": "2026/1"
+    },
+    {
+      "nome": "Kauan de Souza Martins",
+      "ingresso": "2026/1"
+    },
+    {
+      "nome": "Lavínia Dheniffer Rampinelli Silveira",
+      "ingresso": "2026/1"
+    }
+  ]
+}

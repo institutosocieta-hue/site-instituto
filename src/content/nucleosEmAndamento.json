@@ -1,0 +1,37 @@
+{
+  "semestre": "2026/2",
+  "nucleos": [
+    {
+      "nome": "Mercado de Capitais",
+      "linhaPesquisa": "Regulação do mercado de capitais",
+      "coordenadores": [
+        "Caio Oliveira",
+        "Isabella Melo"
+      ]
+    },
+    {
+      "nome": "Fusões e Aquisições",
+      "linhaPesquisa": "Institutos societários das operações de M&A",
+      "coordenadores": [
+        "Gabriel Falci",
+        "Maísa Campos"
+      ]
+    },
+    {
+      "nome": "Insolvência Empresarial",
+      "linhaPesquisa": "Operações de Special Situations na Recuperação Judicial: a utilização do DIP Financing e do Distressed M&A",
+      "coordenadores": [
+        "Maria Fernanda Barivieira",
+        "Valentina Duarte"
+      ]
+    },
+    {
+      "nome": "Contencioso Societário",
+      "linhaPesquisa": "Responsabilidade civil em contencioso societário",
+      "coordenadores": [
+        "Thiago Teixeira",
+        "Lara Santiago"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+node_modules
+dist
+.DS_Store
+*.local
+.env
+.env.*
+!.env.example
+
+# WebP é gerado no build (npm run imagens); os originais PNG/JPG é que ficam no repositório
+public/**/*.webp
+
+# Pastas de entrega e materiais soltos, fora do site publicado
+public/Atividades
+public/Fotos Membros
+Aprimoramento design Quotaparte
+*.zip
+
+# Configurações locais de ferramentas
+.claude

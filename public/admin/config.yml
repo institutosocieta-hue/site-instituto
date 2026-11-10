@@ -1,0 +1,473 @@
+# ─────────────────────────────────────────────────────────────
+# Painel de edição do site (Decap CMS), em /admin.
+# Cada "arquivo" abaixo é um JSON em src/content/ que o site lê.
+# Ao salvar/publicar no painel, a alteração vira um commit no GitHub
+# e a hospedagem (Netlify) republica o site sozinha em ~1 minuto.
+#
+# CONFIGURAR UMA VEZ (ver GUIA-PUBLICACAO.md):
+#   - repo: troque pelo "dono/repositorio" do GitHub (ex.: institutosocieta/site)
+#   - site_domain: o endereço do Netlify (ex.: institutosocieta.netlify.app),
+#     necessário se o painel for aberto por um domínio próprio
+# ─────────────────────────────────────────────────────────────
+
+backend:
+  name: github
+  repo: SEU-USUARIO/SEU-REPOSITORIO
+  branch: main
+  # site_domain: nome-do-site.netlify.app
+
+# Só vale ao abrir o painel em localhost com `npx decap-server` rodando.
+local_backend: true
+
+locale: pt
+site_url: https://SEU-DOMINIO
+logo_url: /logo/instituto/nav-logo.svg
+publish_mode: simple
+show_preview_links: false
+
+# Sem pré-visualização lateral: o formulário ocupa a tela inteira.
+editor:
+  preview: false
+
+# Imagens novas vão para esta pasta, a menos que o campo indique outra.
+media_folder: public/uploads
+public_folder: /uploads
+
+collections:
+  # ═══════════════════════════ ATIVIDADES ═══════════════════════════
+  - name: atividades
+    label: Atividades
+    label_singular: Atividades
+    description: Notícias e agenda, Encontros Horizontais, YouTube, células e a linha do tempo.
+    files:
+      - name: agenda
+        label: Notícias e agenda
+        file: src/content/agenda.json
+        description: >-
+          Uma entrada por notícia ou evento. As páginas separam "Próximos" e "Anteriores" pela data
+          e mostram os mais recentes primeiro. A cada mês, retire as notícias com mais de 30 dias.
+        fields:
+          - label: Notícias e eventos
+            name: itens
+            widget: list
+            label_singular: notícia
+            summary: '{{fields.data}} · {{fields.titulo}}'
+            fields:
+              - { label: Data, name: data, widget: datetime, date_format: 'DD/MM/YYYY', time_format: false, format: 'YYYY-MM-DD', picker_utc: true }
+              - { label: 'Endereço da notícia (identificador)', name: slug, widget: string, hint: 'Minúsculas, sem acento, com hífens. Ex.: encontro-horizontal-com-fulano. Não repita um já existente.' }
+              - label: Tipo
+                name: tipo
+                widget: select
+                options: ['Encontro Horizontal', 'Conferência Società', 'Nota de Rodapé', 'Quórum', 'Núcleos de Estudo', 'Curso', 'Processo Seletivo']
+              - { label: Título, name: titulo, widget: string }
+              - { label: Etiquetas, name: etiquetas, widget: list, required: false, field: { label: Etiqueta, name: etiqueta, widget: string }, hint: 'Temas exibidos nos cartões (além do tipo).' }
+              - { label: Convidados, name: convidados, widget: list, required: false, field: { label: Convidado, name: convidado, widget: string } }
+              - { label: 'Quem conduziu (host)', name: host, widget: string, required: false }
+              - { label: Local, name: local, widget: string, required: false }
+              - { label: Cidade, name: cidade, widget: string, required: false }
+              - { label: Formato, name: formato, widget: select, required: false, options: ['presencial', 'híbrido', 'online'] }
+              - { label: Canal, name: canal, widget: string, required: false, hint: 'Google Meet, YouTube…' }
+              - { label: Horário, name: horario, widget: string, required: false, hint: 'Ex.: 19h30' }
+              - { label: 'Link (inscrição ou gravação)', name: link, widget: string, required: false }
+              - { label: Imagem de capa, name: imagem, widget: image, required: false, media_folder: /public/noticias, public_folder: /noticias, hint: 'Sem imagem, o site usa a ilustração da cidade.' }
+              - { label: 'Proporção da imagem', name: imagemProporcao, widget: select, required: false, options: ['4 / 5', '16 / 9'], hint: 'Padrão: 4 / 5 (retrato).' }
+              - label: Galeria de imagens
+                name: imagens
+                widget: list
+                required: false
+                summary: '{{fields.legenda}}'
+                fields:
+                  - { label: Imagem, name: src, widget: image, media_folder: /public/noticias, public_folder: /noticias }
+                  - { label: Legenda, name: legenda, widget: string, required: false }
+              - label: Programação
+                name: programacao
+                widget: list
+                required: false
+                summary: '{{fields.item}} · {{fields.data}} {{fields.horario}}'
+                fields:
+                  - { label: Item, name: item, widget: string }
+                  - { label: Data, name: data, widget: string, hint: 'Ex.: 13/10' }
+                  - { label: Horário, name: horario, widget: string, required: false }
+              - { label: 'Texto da matéria (um parágrafo por item)', name: corpo, widget: list, required: false, field: { label: Parágrafo, name: paragrafo, widget: text } }
+
+      - name: eventos
+        label: Encontros Horizontais e YouTube
+        file: src/content/eventos.json
+        description: >-
+          Lista permanente de Encontros Horizontais do semestre e as séries do YouTube
+          (cada série mostra sempre o último episódio).
+        fields:
+          - { label: 'Endereço do canal do YouTube', name: linkCanal, widget: string }
+          - label: Encontros Horizontais do semestre
+            name: semestreEncontros
+            widget: object
+            fields:
+              - { label: Semestre, name: semestre, widget: string, hint: 'Ex.: 2026/2. No início de um novo semestre, troque e esvazie a lista.' }
+              - label: Encontros
+                name: encontros
+                widget: list
+                label_singular: encontro
+                summary: '{{fields.data}} · {{fields.convidado}}'
+                fields:
+                  - { label: Data, name: data, widget: datetime, date_format: 'DD/MM/YYYY', time_format: false, format: 'YYYY-MM-DD', picker_utc: true }
+                  - { label: Convidado, name: convidado, widget: string }
+                  - { label: Tema, name: tema, widget: string }
+                  - { label: 'Quem conduziu (host)', name: host, widget: string, required: false }
+                  - { label: Local, name: local, widget: string, required: false }
+                  - { label: Cidade, name: cidade, widget: string, required: false }
+                  - { label: Formato, name: formato, widget: select, required: false, options: ['presencial', 'híbrido', 'online'] }
+                  - { label: Canal, name: canal, widget: string, required: false }
+                  - { label: Horário, name: horario, widget: string, required: false }
+                  - { label: Foto, name: foto, widget: image, required: false, media_folder: /public/encontro-mes, public_folder: /encontro-mes }
+                  - { label: Descrição, name: descricao, widget: text }
+          - label: Séries do YouTube
+            name: seriesYoutube
+            widget: list
+            label_singular: série
+            summary: '{{fields.nome}}'
+            fields:
+              - { label: Nome da série, name: nome, widget: string }
+              - { label: Descrição, name: descricao, widget: string }
+              - label: Último episódio
+                name: ultimoEpisodio
+                widget: object
+                required: false
+                hint: 'Ao gravar um novo episódio, substitua estes dados (não acumule). Série que ainda não estreou fica em branco.'
+                fields:
+                  - { label: Título, name: titulo, widget: string, required: false }
+                  - { label: Convidado, name: convidado, widget: string, required: false }
+                  - { label: 'Data da transmissão', name: data, widget: datetime, date_format: 'DD/MM/YYYY', time_format: false, format: 'YYYY-MM-DD', picker_utc: true, required: false }
+                  - { label: 'Link do episódio no YouTube', name: linkYoutube, widget: string, required: false }
+
+      - name: celulas
+        label: Células regionais
+        file: src/content/celulas.json
+        fields:
+          - label: Células
+            name: itens
+            widget: list
+            label_singular: célula
+            summary: '{{fields.cidade}}'
+            fields:
+              - { label: Cidade, name: cidade, widget: string }
+              - { label: Foto da cidade, name: foto, widget: image, required: false, media_folder: /public/celulas, public_folder: /celulas }
+              - { label: 'Número de membros', name: membros, widget: string, hint: 'Ex.: 15+' }
+              - { label: Embaixadores, name: embaixadores, widget: list, required: false, field: { label: Embaixador, name: embaixador, widget: string } }
+              - label: Eventos da célula
+                name: eventos
+                widget: list
+                required: false
+                summary: '{{fields.data}} · {{fields.titulo}}'
+                fields:
+                  - { label: Data, name: data, widget: datetime, date_format: 'DD/MM/YYYY', time_format: false, format: 'YYYY-MM-DD', picker_utc: true }
+                  - { label: Título, name: titulo, widget: string }
+                  - { label: Descrição, name: descricao, widget: text }
+
+      - name: marcos
+        label: Linha do tempo (Fundação)
+        file: src/content/marcosInstituto.json
+        description: Marcos históricos do Instituto, dos mais antigos para os mais recentes.
+        fields:
+          - label: Marcos
+            name: itens
+            widget: list
+            label_singular: marco
+            summary: '{{fields.data}} · {{fields.titulo}}'
+            fields:
+              - { label: Data, name: data, widget: string, hint: 'Ex.: Nov. 2024' }
+              - { label: Título, name: titulo, widget: string }
+              - { label: Texto, name: texto, widget: text }
+
+  # ═══════════════════════════ PESSOAS ═══════════════════════════
+  - name: pessoas
+    label: Pessoas
+    label_singular: Pessoas
+    description: Membros, Diretoria e cards de trajetória, e distinções.
+    files:
+      - name: membros
+        label: Quadro de membros
+        file: src/content/membros.json
+        description: >-
+          Efetivos aparecem com foto; transitórios só com o nome. Quando alguém passa de
+          transitório a efetivo, mova o nome de uma lista para a outra.
+        fields:
+          - label: Membros efetivos
+            name: efetivos
+            widget: list
+            label_singular: membro efetivo
+            summary: '{{fields.nome}} · {{fields.ingresso}}'
+            fields:
+              - { label: 'Nome de exibição', name: nome, widget: string, hint: 'Igual ao nome em Governança, se a pessoa tiver card de trajetória.' }
+              - { label: 'Nome completo', name: completo, widget: string }
+              - { label: 'Semestre de ingresso', name: ingresso, widget: string, hint: 'Ex.: 2026/1' }
+              - { label: 'Núcleo de estudo atual', name: nucleo, widget: string, required: false }
+              - { label: Foto, name: foto, widget: image, required: false, media_folder: /public/diretoria, public_folder: /diretoria, hint: 'Retrato em formato 4:5. Use nome de arquivo sem espaços nem acentos.' }
+              - { label: LinkedIn, name: linkedin, widget: string, required: false }
+          - label: Membros transitórios
+            name: transitorios
+            widget: list
+            label_singular: membro transitório
+            summary: '{{fields.nome}} · {{fields.ingresso}}'
+            fields:
+              - { label: Nome, name: nome, widget: string }
+              - { label: 'Semestre de ingresso', name: ingresso, widget: string, hint: 'Ex.: 2026/2' }
+
+      - name: governanca
+        label: Diretoria e cards de trajetória
+        file: src/content/governanca.json
+        description: >-
+          A Diretoria e o card que abre ao clicar numa pessoa. Para quem tem Prêmio Unità, comece o
+          item de distinção com "Prêmio Unità" para ele aparecer em destaque.
+        fields:
+          - label: Diretoria
+            name: diretoria
+            widget: list
+            label_singular: cargo
+            summary: '{{fields.cargo}} · {{fields.nome}}'
+            fields:
+              - { label: Nome, name: nome, widget: string, hint: 'Igual ao nome cadastrado em "Cards de pessoas" abaixo.' }
+              - { label: Cargo, name: cargo, widget: string }
+          - label: 'Cards de pessoas (Diretoria e Coordenadores)'
+            name: pessoas
+            widget: list
+            label_singular: pessoa
+            summary: '{{fields.nome}}'
+            fields:
+              - { label: Nome, name: nome, widget: string }
+              - { label: Foto, name: foto, widget: image, required: false, media_folder: /public/diretoria, public_folder: /diretoria }
+              - { label: LinkedIn, name: linkedin, widget: string, required: false }
+              - { label: Associação, name: associacao, widget: list, required: false, field: { label: Tópico, name: topico, widget: string }, hint: 'Desde quando é membro.' }
+              - { label: Gestão, name: gestao, widget: list, required: false, field: { label: Tópico, name: topico, widget: string }, hint: 'Cargos e coordenações já ocupados.' }
+              - { label: Trajetória, name: trajetoria, widget: list, required: false, field: { label: Tópico, name: topico, widget: string }, hint: 'Núcleos que integrou como membro.' }
+              - { label: Distinções, name: distincoes, widget: list, required: false, field: { label: Tópico, name: topico, widget: string }, hint: 'Ex.: Prêmio Unità 2026/1 (1º lugar), eleito pelos membros…' }
+
+      - name: distincoes
+        label: Distinções
+        file: src/content/distincoes.json
+        fields:
+          - label: 'Excelência Società (vencedores anuais)'
+            name: excelencia
+            widget: list
+            required: false
+            label_singular: vencedor
+            summary: '{{fields.ano}} · {{fields.nome}}'
+            fields:
+              - { label: Nome, name: nome, widget: string }
+              - { label: Ano, name: ano, widget: number, value_type: int }
+              - { label: Foto, name: foto, widget: image, required: false, media_folder: /public/diretoria, public_folder: /diretoria }
+              - { label: Descrição, name: descricao, widget: text }
+          - label: 'Descrição fixa das demais distinções'
+            name: demais
+            widget: list
+            allow_add: false
+            summary: '{{fields.nome}}'
+            fields:
+              - { label: Código interno, name: chave, widget: hidden }
+              - { label: Nome, name: nome, widget: string }
+              - { label: Texto, name: texto, widget: text }
+          - { label: 'Ano das distinções semestrais', name: ano, widget: number, value_type: int }
+          - label: Distinções por semestre
+            name: semestres
+            widget: list
+            label_singular: semestre
+            summary: '{{fields.semestre}} · {{fields.label}}'
+            fields:
+              - { label: Semestre, name: semestre, widget: string, hint: 'Ex.: 2026/2' }
+              - { label: 'Rótulo', name: label, widget: string, hint: 'Ex.: 2º Semestre' }
+              - label: Vencedores
+                name: resultados
+                widget: object
+                fields:
+                  - label: 'Prêmio Unità (um vencedor)'
+                    name: unita
+                    widget: object
+                    required: false
+                    fields:
+                      - { label: Nome, name: nome, widget: string, required: false }
+                      - { label: Foto, name: foto, widget: image, required: false, media_folder: /public/diretoria, public_folder: /diretoria }
+                  - label: 'Prêmio Índice (um por núcleo)'
+                    name: indice
+                    widget: list
+                    required: false
+                    summary: '{{fields.nome}} · {{fields.nucleo}}'
+                    fields:
+                      - { label: Nome, name: nome, widget: string }
+                      - { label: Foto, name: foto, widget: image, required: false, media_folder: /public/diretoria, public_folder: /diretoria }
+                      - { label: Núcleo, name: nucleo, widget: string }
+                  - { label: 'Menção Iterare (nomes)', name: iterare, widget: list, required: false, field: { label: Nome, name: nome, widget: string } }
+
+  # ═══════════════════════════ REVISTA QUOTAPARTE ═══════════════════════════
+  - name: revista
+    label: Revista QuotaParte
+    label_singular: Revista
+    description: Edições e trabalhos, núcleos e avisos do portal.
+    files:
+      - name: edicoes
+        label: Edições e trabalhos
+        file: src/content/edicoes.json
+        description: Uma entrada por edição publicada, cada uma com seus trabalhos.
+        fields:
+          - label: Edições
+            name: itens
+            widget: list
+            label_singular: edição
+            summary: 'Edição {{fields.numero}} · {{fields.nucleo}}'
+            fields:
+              - { label: Número, name: numero, widget: number, value_type: int, min: 1 }
+              - { label: Núcleo, name: nucleo, widget: string }
+              - { label: Semestre, name: semestre, widget: string, hint: 'Ex.: 2026/1' }
+              - { label: 'Data de publicação', name: dataPublicacao, widget: datetime, date_format: 'DD/MM/YYYY', time_format: false, format: 'YYYY-MM-DD', picker_utc: true, required: false }
+              - { label: 'Linha de pesquisa', name: linhaPesquisa, widget: text }
+              - { label: Coordenação, name: coordenacao, widget: string }
+              - { label: Chamada, name: chamada, widget: text }
+              - { label: Subtítulo, name: subtitulo, widget: string, required: false }
+              - { label: 'Texto de conexão', name: textoConexao, widget: text }
+              - { label: Capa, name: capa, widget: image, required: false, media_folder: /public/capas, public_folder: /capas }
+              - { label: 'Link do PDF (Drive)', name: linkDrive, widget: string, required: false }
+              - { label: ISSN, name: issn, widget: string, required: false }
+              - label: Trabalhos
+                name: trabalhos
+                widget: list
+                required: false
+                label_singular: trabalho
+                summary: '{{fields.titulo}}'
+                fields:
+                  - { label: 'Endereço do trabalho (identificador)', name: slug, widget: string, hint: 'Minúsculas, sem acento, com hífens. Ex.: ed02-titulo-curto.' }
+                  - { label: Título, name: titulo, widget: string }
+                  - { label: 'Autor (como aparece na lista)', name: autor, widget: string }
+                  - { label: Autores, name: autores, widget: list, required: false, field: { label: Autor, name: autor, widget: string } }
+                  - { label: Núcleo, name: nucleo, widget: string, required: false }
+                  - { label: Resumo, name: resumo, widget: text, required: false }
+                  - { label: 'Palavras-chave', name: palavrasChave, widget: list, required: false, field: { label: Palavra, name: palavra, widget: string } }
+                  - { label: 'Link do PDF', name: pdf, widget: string, required: false }
+                  - { label: 'Outro link', name: link, widget: string, required: false }
+
+      - name: nucleosEmAndamento
+        label: Núcleos em produção
+        file: src/content/nucleosEmAndamento.json
+        description: Núcleos do semestre atual, ainda sem edição publicada. Atualizar a cada semestre.
+        fields:
+          - { label: Semestre, name: semestre, widget: string, hint: 'Ex.: 2026/2' }
+          - label: Núcleos
+            name: nucleos
+            widget: list
+            label_singular: núcleo
+            summary: '{{fields.nome}}'
+            fields:
+              - { label: Nome, name: nome, widget: string }
+              - { label: 'Linha de pesquisa', name: linhaPesquisa, widget: text }
+              - { label: Coordenadores, name: coordenadores, widget: list, field: { label: Coordenador, name: coordenador, widget: string, hint: 'Igual ao nome cadastrado em Pessoas.' } }
+
+      - name: nucleosPublicando
+        label: Núcleos do ciclo concluído
+        file: src/content/nucleosPublicando.json
+        description: >-
+          Núcleos do ciclo mais recente já concluído. Deixe o número da edição em branco enquanto
+          o núcleo ainda não tiver edição publicada.
+        fields:
+          - label: Semestres
+            name: itens
+            widget: list
+            label_singular: semestre
+            summary: '{{fields.semestre}}'
+            fields:
+              - { label: Semestre, name: semestre, widget: string }
+              - label: Núcleos
+                name: nucleos
+                widget: list
+                summary: '{{fields.nome}}'
+                fields:
+                  - { label: Nome, name: nome, widget: string }
+                  - { label: 'Linha de pesquisa', name: linhaPesquisa, widget: text }
+                  - { label: 'Número da edição', name: edicaoNumero, widget: number, value_type: int, required: false }
+
+      - name: diarioNucleos
+        label: Diário de produção
+        file: src/content/diarioNucleos.json
+        fields:
+          - label: Posts
+            name: itens
+            widget: list
+            label_singular: post
+            summary: '{{fields.data}} · {{fields.tipo}}'
+            fields:
+              - { label: Tipo, name: tipo, widget: select, options: [{ label: Comentário, value: comentario }, { label: 'Encontro inaugural', value: encontro }, { label: Atualização, value: atualizacao }] }
+              - { label: Data, name: data, widget: datetime, date_format: 'DD/MM/YYYY', time_format: false, format: 'YYYY-MM-DD', picker_utc: true }
+              - { label: Texto, name: texto, widget: text }
+              - { label: Autor, name: autor, widget: string, required: false }
+
+      - name: avisos
+        label: Avisos rotativos da revista
+        file: src/content/avisos.json
+        fields:
+          - { label: Avisos, name: itens, widget: list, field: { label: Aviso, name: aviso, widget: string } }
+
+  # ═══════════════════════════ PÁGINAS E CONTATO ═══════════════════════════
+  - name: paginas
+    label: Páginas e contato
+    label_singular: Páginas
+    description: Contato, Seja Membro, depoimentos e avisos da Home.
+    files:
+      - name: contato
+        label: Contato
+        file: src/content/contato.json
+        description: Canais do Instituto. Deixe um campo em branco para ocultar o link correspondente.
+        fields:
+          - { label: E-mail, name: email, widget: string, required: false }
+          - { label: Instagram (endereço completo), name: instagram, widget: string, required: false }
+          - { label: 'YouTube (@canal)', name: youtube, widget: string, required: false }
+          - { label: LinkedIn (endereço completo), name: linkedin, widget: string, required: false }
+          - { label: 'Formulário de contribuição (Apoio)', name: formularioContribuicao, widget: string, required: false }
+          - { label: 'Formulário da newsletter', name: newsletterLink, widget: string, required: false }
+
+      - name: processoSeletivo
+        label: Seja Membro (processo seletivo)
+        file: src/content/processoSeletivo.json
+        fields:
+          - { label: 'Link do edital', name: linkEdital, widget: string, required: false }
+          - { label: 'Link do formulário de inscrição', name: linkFormulario, widget: string, required: false }
+          - { label: 'Para quem é (parágrafos)', name: paraQuem, widget: list, required: false, field: { label: Parágrafo, name: paragrafo, widget: text } }
+          - label: 'Como funciona o semestre'
+            name: semestre
+            widget: list
+            required: false
+            summary: '{{fields.titulo}}'
+            fields:
+              - { label: Numeral, name: numeral, widget: string, required: false }
+              - { label: Título, name: titulo, widget: string }
+              - { label: Texto, name: texto, widget: text }
+          - label: 'Perguntas frequentes'
+            name: faq
+            widget: list
+            required: false
+            summary: '{{fields.pergunta}}'
+            fields:
+              - { label: Pergunta, name: pergunta, widget: string }
+              - { label: Resposta, name: resposta, widget: text }
+
+      - name: depoimentos
+        label: Depoimentos de membros
+        file: src/content/depoimentos.json
+        description: A seção fica oculta enquanto a lista estiver vazia.
+        fields:
+          - label: Depoimentos
+            name: itens
+            widget: list
+            required: false
+            summary: '{{fields.nome}}'
+            fields:
+              - { label: Texto, name: texto, widget: text }
+              - { label: Nome, name: nome, widget: string }
+              - { label: Núcleo, name: nucleo, widget: string, required: false }
+
+      - name: avisosInstituto
+        label: Avisos rotativos da Home
+        file: src/content/avisosInstituto.json
+        fields:
+          - { label: Avisos, name: itens, widget: list, field: { label: Aviso, name: aviso, widget: string } }
+
+      - name: parceiros
+        label: Parceiros ("Já nos receberam")
+        file: src/content/parceiros.json
+        fields:
+          - { label: Parceiros, name: itens, widget: list, field: { label: Nome, name: nome, widget: string } }

@@ -1,0 +1,240 @@
+{
+  "diretoria": [
+    {
+      "nome": "Pedro Puente",
+      "cargo": "Presidente"
+    },
+    {
+      "nome": "Vitória Richetti",
+      "cargo": "Vice-Presidente"
+    },
+    {
+      "nome": "Sofia Vollrath",
+      "cargo": "Diretora Executiva"
+    },
+    {
+      "nome": "Raissa Souza",
+      "cargo": "Diretora de Integração"
+    },
+    {
+      "nome": "Larissa Del Lhano",
+      "cargo": "Diretora Acadêmica"
+    }
+  ],
+  "pessoas": [
+    {
+      "nome": "Pedro Puente",
+      "foto": "/diretoria/pedro-puente.png",
+      "linkedin": "https://www.linkedin.com/in/pedro-puente-52150a19a/",
+      "associacao": [
+        "Fundador.",
+        "Membro desde 2025/1."
+      ],
+      "gestao": [
+        "Presidente, gestão 2025/2027."
+      ],
+      "trajetoria": [
+        "Integrante do Núcleo de Procedimento Arbitral (2026/1).",
+        "Integrante do Núcleo de Insolvência Empresarial (2026/2)."
+      ],
+      "distincoes": null
+    },
+    {
+      "nome": "Vitória Richetti",
+      "foto": "/diretoria/vitoria-richetti.png",
+      "linkedin": "https://www.linkedin.com/in/vit%C3%B3ria-richetti-72241623a/",
+      "associacao": [
+        "Fundadora.",
+        "Membro desde 2025/1."
+      ],
+      "gestao": [
+        "Vice-Presidente, gestão 2025/2027."
+      ],
+      "trajetoria": [
+        "Integrante do Núcleo de Contencioso Societário (2026/1).",
+        "Integrante do Núcleo de Fusões e Aquisições (2026/2)."
+      ],
+      "distincoes": [
+        "Prêmio Índice 2026/1, reconhecida pelos colegas como referência nas discussões do Núcleo de Contencioso Societário."
+      ]
+    },
+    {
+      "nome": "Sofia Vollrath",
+      "foto": "/diretoria/sofia-vollrath.png",
+      "linkedin": "https://www.linkedin.com/in/sofia-vollrath/",
+      "associacao": [
+        "Membro desde 2025/1."
+      ],
+      "gestao": [
+        "Diretora Executiva, gestão 2025/2027.",
+        "Coordenadora do Núcleo de Direito Civil Aplicado (2025/1)."
+      ],
+      "trajetoria": [
+        "Integrante do Núcleo de Contencioso Societário (2026/1 e 2026/2)."
+      ],
+      "distincoes": null
+    },
+    {
+      "nome": "Raissa Souza",
+      "foto": "/diretoria/raissa-souza.png",
+      "linkedin": "https://www.linkedin.com/in/ra%C3%ADssa-souza-1916a5257/",
+      "associacao": [
+        "Membro desde 2025/2."
+      ],
+      "gestao": [
+        "Diretora de Integração, gestão 2025/2027."
+      ],
+      "trajetoria": [
+        "Integrante do Núcleo de Contencioso Societário (2026/1).",
+        "Integrante do Núcleo de Mercado de Capitais (2026/2)."
+      ],
+      "distincoes": [
+        "Prêmio Índice 2025/2, reconhecida pelos colegas como referência nas discussões da Vertical de Resolução de Conflitos."
+      ]
+    },
+    {
+      "nome": "Larissa Del Lhano",
+      "foto": "/diretoria/larissa-del-lhano.png",
+      "linkedin": null,
+      "associacao": [
+        "Membro desde 2025/2."
+      ],
+      "gestao": [
+        "Diretora Acadêmica.",
+        "Coordenadora do curso “Fundamentos do Direito Societário”, promovido pelo Instituto Società em parceria com o Instituto BLS (outubro de 2026)."
+      ],
+      "trajetoria": null,
+      "distincoes": null
+    },
+    {
+      "nome": "Caio Oliveira",
+      "foto": "/diretoria/caio-oliveira.png",
+      "linkedin": "https://www.linkedin.com/in/gabrielocaio/",
+      "associacao": [
+        "Membro desde 2025/2."
+      ],
+      "gestao": [
+        "Coordenador do Núcleo de Fundos de Investimento (2026/1)."
+      ],
+      "trajetoria": [
+        "Integrante do Núcleo de Mercado de Capitais (2026/2)."
+      ],
+      "distincoes": [
+        "Prêmio Índice 2025/2, reconhecido pelos colegas como referência nas discussões da Vertical de Direito Societário."
+      ]
+    },
+    {
+      "nome": "Gabriel Falci",
+      "foto": "/diretoria/gabriel-falci.png",
+      "linkedin": "https://www.linkedin.com/in/gabrielsfalci/",
+      "associacao": [
+        "Membro desde 2025/1."
+      ],
+      "gestao": [
+        "Coordenador da Vertical de Direito Societário (2025/2).",
+        "Coordenador do Núcleo de Fusões e Aquisições (2026/2)."
+      ],
+      "trajetoria": [
+        "Integrante do Núcleo de Fusões e Aquisições (2026/1)."
+      ],
+      "distincoes": [
+        "Prêmio Índice 2025/2, reconhecido pelos colegas como referência nas discussões da Vertical de Direito Civil Aplicado.",
+        "Prêmio Unità 2026/1 (2º lugar), eleito pelos membros do Instituto como referência na condução dos debates nos Encontros Horizontais do Instituto."
+      ]
+    },
+    {
+      "nome": "Maísa Campos",
+      "foto": "/diretoria/maisa-campos.png",
+      "linkedin": "https://www.linkedin.com/in/ma%C3%ADsa-campos-bezerra-81026821b/",
+      "associacao": [
+        "Membro desde 2026/1."
+      ],
+      "gestao": [
+        "Coordenadora do Núcleo de Fusões e Aquisições (2026/2)."
+      ],
+      "trajetoria": [
+        "Integrante do Núcleo de Fusões e Aquisições (2026/1)."
+      ],
+      "distincoes": null
+    },
+    {
+      "nome": "Isabella Melo",
+      "foto": "/diretoria/isabella-melo.png",
+      "linkedin": "https://www.linkedin.com/in/isabellamelo04/",
+      "associacao": [
+        "Membro desde 2025/2."
+      ],
+      "gestao": [
+        "Coordenadora do Núcleo de Mercado de Capitais (2026/2)."
+      ],
+      "trajetoria": [
+        "Integrante do Núcleo de Fundos de Investimento (2026/1)."
+      ],
+      "distincoes": null
+    },
+    {
+      "nome": "Maria Fernanda Barivieira",
+      "foto": "/diretoria/maria-fernanda-barivieira.png",
+      "linkedin": "https://www.linkedin.com/in/maria-fernanda-zanetti-barivieira-865479282/",
+      "associacao": [
+        "Membro desde 2025/1."
+      ],
+      "gestao": [
+        "Coordenadora do Núcleo de Insolvência e Estabilidade do Sistema Econômico (2026/1).",
+        "Coordenadora do Núcleo de Insolvência Empresarial (2026/2)."
+      ],
+      "trajetoria": null,
+      "distincoes": [
+        "Prêmio Índice 2025/2, reconhecida pelos colegas como referência nas discussões da Vertical de Recuperação de Empresas e Falência."
+      ]
+    },
+    {
+      "nome": "Valentina Duarte",
+      "foto": "/diretoria/valentina-duarte.png",
+      "linkedin": "https://www.linkedin.com/in/valentinaprauchnerduarte/",
+      "associacao": [
+        "Membro desde 2025/1."
+      ],
+      "gestao": [
+        "Coordenadora do Núcleo de Reestruturação no Agronegócio (2026/1).",
+        "Coordenadora do Núcleo de Insolvência Empresarial (2026/2)."
+      ],
+      "trajetoria": null,
+      "distincoes": [
+        "Prêmio Unità 2026/1 (1º lugar), eleita pelos membros do Instituto como referência na condução dos debates nos Encontros Horizontais do Instituto."
+      ]
+    },
+    {
+      "nome": "Lara Santiago",
+      "foto": "/diretoria/lara-santiago.png",
+      "linkedin": "https://www.linkedin.com/in/lara-santiago-de-barcellos-723520302/",
+      "associacao": [
+        "Membro desde 2025/1."
+      ],
+      "gestao": [
+        "Coordenadora da Vertical de Resolução de Conflitos (2025/2).",
+        "Coordenadora do Núcleo de Contencioso Societário (2026/2)."
+      ],
+      "trajetoria": [
+        "Integrante do Núcleo de Contencioso Societário (2026/1)."
+      ],
+      "distincoes": null
+    },
+    {
+      "nome": "Thiago Teixeira",
+      "foto": "/diretoria/thiago-teixeira.png",
+      "linkedin": "https://www.linkedin.com/in/thiago-bortolini-teixeira/",
+      "associacao": [
+        "Membro desde 2025/2."
+      ],
+      "gestao": [
+        "Coordenador do Núcleo de Contencioso Societário (2026/1 e 2026/2)."
+      ],
+      "trajetoria": null,
+      "distincoes": [
+        "Prêmio Unità 2025/2 (2º lugar), eleito pelos membros do Instituto como referência na condução dos debates nos Encontros Horizontais do Instituto.",
+        "Prêmio Unità 2026/1 (3º lugar), eleito pelos membros do Instituto como referência na condução dos debates nos Encontros Horizontais do Instituto."
+      ]
+    }
+  ]
+}

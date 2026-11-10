@@ -1,0 +1,74 @@
+{
+  "linkCanal": "https://www.youtube.com/@InstitutoSociet%C3%A0",
+  "semestreEncontros": {
+    "semestre": "2026/2",
+    "encontros": [
+      {
+        "data": "2026-09-02",
+        "convidado": "Rodrigo Tellechea",
+        "tema": "O Paradoxo da Falência",
+        "host": null,
+        "local": "Souto Correa Advogados",
+        "cidade": "Porto Alegre",
+        "formato": "híbrido",
+        "canal": null,
+        "horario": null,
+        "foto": "/encontro-mes/encontro-1.png",
+        "descricao": "Primeiro Encontro Horizontal híbrido do Instituto, em 2 de setembro, na sede do Souto Correa Advogados em Porto Alegre. O professor Rodrigo Tellechea apresentou aos membros o conteúdo de seu livro O Paradoxo da Falência."
+      },
+      {
+        "data": "2026-09-30",
+        "convidado": "Adriana Pugliesi",
+        "tema": "Limites da autonomia privada nos planos de reorganização",
+        "host": "Larissa Del Lhano",
+        "local": null,
+        "cidade": null,
+        "formato": "online",
+        "canal": "Google Meet",
+        "horario": "19h30",
+        "foto": "/noticias/2026-09-30-encontro-horizontal-01.png",
+        "descricao": "Encontro Horizontal em 30 de setembro, às 19h30, conduzido por Larissa Del Lhano. A professora Adriana Pugliesi discutiu os limites da autonomia privada nos planos de reorganização das empresas."
+      },
+      {
+        "data": "2026-10-26",
+        "convidado": "Ivo Bari",
+        "tema": "Cláusulas restritivas de concorrência",
+        "host": "Lara Santiago",
+        "local": null,
+        "cidade": null,
+        "formato": "online",
+        "canal": "Google Meet",
+        "horario": "19h30",
+        "foto": "/noticias/2026-10-26-encontro-horizontal-ivo-bari-01.png",
+        "descricao": "Os membros do Instituto Società receberam o Prof. Ivo Bari para discutir os limites de validade e eficácia das cláusulas restritivas de concorrência. O encontro, conduzido pela host Lara Santiago, aconteceu excepcionalmente em uma segunda-feira e contou com a presença dos novos membros."
+      }
+    ]
+  },
+  "seriesYoutube": [
+    {
+      "nome": "Conferências Società",
+      "descricao": "Webinars públicos com especialistas em Direito Empresarial.",
+      "ultimoEpisodio": {
+        "titulo": "Conferência Società Ep. 03 | Arbitragem Empresarial: estratégia, prova e persuasão",
+        "convidado": "Leonardo Ohlrogge",
+        "data": "2026-10-08",
+        "linkYoutube": "https://www.youtube.com/watch?v=lKg6qRVrKUY"
+      }
+    },
+    {
+      "nome": "Nota de Rodapé",
+      "descricao": "Entrevistas com autores de obras de referência da área.",
+      "ultimoEpisodio": {
+        "titulo": "Nota de Rodapé Ep. 02 | O Contrato de Escrow em Alienações de Participação Societária",
+        "convidado": "Giacomo Grezzana",
+        "data": "2026-09-24",
+        "linkYoutube": "https://www.youtube.com/watch?v=ArTWf568R7Q"
+      }
+    },
+    {
+      "nome": "Quórum",
+      "descricao": "Clube de leitura em formato de assembleia.",
+      "ultimoEpisodio": null
+    }
+  ]
+}

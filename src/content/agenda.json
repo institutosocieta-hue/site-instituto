@@ -1,0 +1,190 @@
+{
+  "itens": [
+    {
+      "data": "2026-10-29",
+      "slug": "curso-fundamentos-do-direito-societario",
+      "etiquetas": [
+        "Direito Societário",
+        "Parceria BLS"
+      ],
+      "tipo": "Curso",
+      "titulo": "Curso Fundamentos do Direito Societário tem início com aula da Profa. Rachel Sztajn",
+      "local": null,
+      "cidade": null,
+      "convidados": [
+        "Rachel Sztajn",
+        "Carlos Portugal Gouvêa",
+        "Erasmo Valladão Azevedo e Novaes França"
+      ],
+      "formato": "online",
+      "canal": null,
+      "horario": "19h30",
+      "link": null,
+      "imagem": "/noticias/2026-10-curso-fds-card-geral.png",
+      "imagens": [
+        {
+          "src": "/noticias/2026-10-20-curso-fds-aula-01-rachel-sztajn.png",
+          "legenda": "Aula 01 · Profa. Rachel Sztajn"
+        },
+        {
+          "src": "/noticias/2026-10-28-curso-fds-aula-02-carlos-portugal-gouvea.png",
+          "legenda": "Aula 02 · Prof. Carlos Portugal Gouvêa"
+        },
+        {
+          "src": "/noticias/2026-10-29-curso-fds-aula-03-erasmo-valladao.png",
+          "legenda": "Aula 03 · Prof. Erasmo Valladão Azevedo e Novaes França"
+        }
+      ],
+      "programacao": [
+        {
+          "item": "Aula 01",
+          "data": "20/10",
+          "horario": "19h30"
+        },
+        {
+          "item": "Aula 02",
+          "data": "28/10",
+          "horario": "19h30"
+        },
+        {
+          "item": "Aula 03",
+          "data": "29/10",
+          "horario": "19h30"
+        }
+      ],
+      "corpo": [
+        "Teve início o Curso Fundamentos do Direito Societário, realizado pelo Instituto Società em parceria com o Instituto BLS, de forma gratuita, online e ao vivo. A primeira aula, sobre capital social e participação societária, foi ministrada pela Profa. Rachel Sztajn. Na sequência, o Prof. Carlos Portugal Gouvêa conduziu a aula sobre administração e governança. Por último, tivemos a aula com o Prof. Erasmo Valladão Azevedo e Novaes França sobre Deliberações Societárias & Controle."
+      ]
+    },
+    {
+      "data": "2026-10-26",
+      "slug": "encontro-horizontal-clausulas-restritivas-concorrencia-ivo-bari",
+      "etiquetas": [
+        "Concorrência",
+        "Contratos"
+      ],
+      "tipo": "Encontro Horizontal",
+      "titulo": "Encontro Horizontal debate cláusulas restritivas de concorrência com o Prof. Ivo Bari",
+      "local": null,
+      "cidade": null,
+      "convidados": [
+        "Ivo Bari"
+      ],
+      "host": "Lara Santiago",
+      "formato": "online",
+      "canal": "Google Meet",
+      "horario": "19h30",
+      "link": null,
+      "imagem": "/noticias/2026-10-26-encontro-horizontal-ivo-bari-01.png",
+      "corpo": [
+        "Os membros do Instituto Società receberam o Prof. Ivo Bari para discutir os limites de validade e eficácia das cláusulas restritivas de concorrência. O encontro, conduzido pela host Lara Santiago, aconteceu excepcionalmente em uma segunda-feira e contou com a presença dos novos membros."
+      ]
+    },
+    {
+      "data": "2026-10-24",
+      "slug": "processo-seletivo-nova-rodada-de-entrevistas",
+      "etiquetas": [
+        "Membros"
+      ],
+      "tipo": "Processo Seletivo",
+      "titulo": "Instituto realiza nova rodada de entrevistas do processo seletivo",
+      "local": null,
+      "cidade": null,
+      "convidados": [],
+      "formato": null,
+      "link": null,
+      "imagem": null,
+      "corpo": [
+        "O Instituto Società concluiu mais uma etapa do processo seletivo de membros transitórios, com entrevistas realizadas pela Diretoria."
+      ]
+    },
+    {
+      "data": "2026-10-22",
+      "slug": "nucleos-de-estudo-ciclo-de-outubro",
+      "etiquetas": [
+        "Mercado de Capitais",
+        "Insolvência",
+        "Fusões e Aquisições",
+        "Contencioso Societário"
+      ],
+      "tipo": "Núcleos de Estudo",
+      "titulo": "Núcleos de Estudo realizam os encontros do ciclo de outubro",
+      "local": null,
+      "cidade": null,
+      "convidados": [],
+      "formato": null,
+      "link": null,
+      "imagem": "/noticias/2026-10-nucleos-estudo-01.png",
+      "programacao": [
+        {
+          "item": "Mercado de Capitais",
+          "data": "13/10",
+          "horario": "19h30"
+        },
+        {
+          "item": "Insolvência",
+          "data": "13/10",
+          "horario": "19h45"
+        },
+        {
+          "item": "Fusões e Aquisições",
+          "data": "14/10",
+          "horario": "19h30"
+        },
+        {
+          "item": "Contencioso Societário",
+          "data": "22/10",
+          "horario": "19h45"
+        }
+      ],
+      "corpo": [
+        "Os Núcleos de Estudo do Instituto Società deram continuidade às atividades do semestre 2026/2, com encontros de Mercado de Capitais, Insolvência, Fusões e Aquisições e Contencioso Societário."
+      ]
+    },
+    {
+      "data": "2026-10-08",
+      "slug": "conferencia-societa-construcao-do-caso-arbitral-leonardo-ohlrogge",
+      "etiquetas": [
+        "Arbitragem"
+      ],
+      "tipo": "Conferência Società",
+      "titulo": "Conferência Società discute a construção do caso arbitral com o Prof. Leonardo Ohlrogge",
+      "local": null,
+      "cidade": null,
+      "convidados": [
+        "Leonardo Ohlrogge"
+      ],
+      "formato": "online",
+      "canal": "YouTube",
+      "horario": "19h",
+      "link": null,
+      "imagem": "/noticias/2026-10-08-conferencia-ohlrogge-01.png",
+      "corpo": [
+        "A terceira Conferência Società tratou da construção do caso arbitral, com foco em estratégia, prova e persuasão. O Prof. Leonardo Ohlrogge, da MLL Legal, em Zurique, foi o expositor. A transmissão aconteceu ao vivo no canal do Instituto no YouTube."
+      ]
+    },
+    {
+      "data": "2026-09-30",
+      "slug": "encontro-horizontal-reune-membros-do-instituto",
+      "etiquetas": [
+        "Insolvência",
+        "Autonomia privada"
+      ],
+      "tipo": "Encontro Horizontal",
+      "titulo": "Encontro Horizontal reúne membros do Instituto Società",
+      "local": null,
+      "cidade": null,
+      "convidados": [
+        "Adriana Pugliesi"
+      ],
+      "formato": "online",
+      "canal": "Google Meet",
+      "horario": "19h30",
+      "link": null,
+      "imagem": "/noticias/2026-09-30-encontro-horizontal-01.png",
+      "corpo": [
+        "O Instituto Società realizou, em 30 de setembro, o Encontro Horizontal do mês, que reuniu os membros em debate com a Profa. Adriana Pugliesi sobre os limites da autonomia privada nos planos de reorganização das empresas."
+      ]
+    }
+  ]
+}

@@ -1,0 +1,231 @@
+/* ════════════════════════════════════════════════════════════════
+   Instituto Società — camada "Atelier"
+   Refinamento visual de alto padrão: papel branco, tipografia leve e
+   generosa, filetes finos, quinas retas, muito ar e movimento lento.
+
+   Referências de linguagem: casas de moda, relojoaria e hotelaria de luxo
+   (Loro Piana, Rolex, Aston Martin, Cheval Blanc) — poucas cores, imagem
+   em sangria, texto contido, nada que grite.
+
+   Carregado depois de main.css: ajusta tokens e peças compartilhadas.
+   ════════════════════════════════════════════════════════════════ */
+
+:root {
+  --branco: #ffffff;
+  --fundo-sutil: rgba(149, 153, 136, 0.1); /* o sálvia da paleta, bem diluído */
+  --borda: #dfe3d9;
+  --ouro: #959988; /* filete sálvia */
+  --ouro-claro: #b7c6b1; /* sálvia claro, sobre fundos verdes */
+  --raio: 0px;
+  --nav-h: 80px;
+  --ease-lento: cubic-bezier(0.22, 0.7, 0.18, 1);
+}
+
+body {
+  background: var(--branco);
+  font-weight: 400;
+}
+
+::selection {
+  background: var(--verde);
+  color: #fff;
+}
+
+/* ── Tipografia: títulos leves, espaçados; texto corrido arejado ── */
+h1,
+h2 {
+  font-weight: 400 !important;
+}
+
+h3 {
+  font-weight: 500;
+}
+
+.secao-titulo,
+.bloco-titulo,
+.editoria-titulo,
+.semestrais-titulo,
+.painel-titulo,
+.mais-titulo,
+.portal-titulo {
+  font-weight: 400 !important;
+  letter-spacing: 0.03em !important;
+}
+
+/* todos os títulos de cartões e matérias: um grau mais leve */
+[class*='titulo']:not(.hero-titulo):not(.janela-titulo) {
+  font-weight: 500 !important;
+  letter-spacing: 0.025em;
+}
+
+.secao-titulo {
+  font-size: clamp(26px, 2.8vw, 38px);
+  line-height: 1.25;
+}
+
+.secao-sub {
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 1.85;
+}
+
+.label-caps {
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.28em;
+}
+
+/* rótulo de seção: legenda miúda + filete sálvia */
+.secao-rotulo {
+  gap: 14px;
+  margin-bottom: 36px;
+  color: var(--sage-texto);
+}
+
+.secao-rotulo::after {
+  width: 48px;
+  background: var(--ouro);
+}
+
+/* ── Página: lâmina branco, sem cantos nem sombra ── */
+.pagina--sobrepoe {
+  margin-top: -1px;
+}
+
+.pagina--sobrepoe::before {
+  background: var(--branco);
+  border-radius: 0;
+  box-shadow: none;
+}
+
+/* ── Blocos de página longa ── */
+.bloco-titulo {
+  font-size: clamp(22px, 2.3vw, 32px);
+  line-height: 1.25;
+}
+
+.bloco-cabecalho {
+  gap: clamp(18px, 2.4vw, 32px);
+}
+
+.bloco-quadrado {
+  width: 5px;
+  height: 5px;
+  background: var(--ouro);
+}
+
+/* faixas de destaque: verde cheio da paleta, com os tokens invertidos (texto branco/sálvia) */
+.bloco--faixa {
+  --verde: #ffffff;
+  --branco: #324b30;
+  --sage-texto: #b7c6b1;
+  --texto-sec: #dfe6db;
+  --texto-corpo: #f1f4ee;
+  --borda: rgba(255, 255, 255, 0.24);
+  --fundo-sutil: rgba(255, 255, 255, 0.08);
+  --ouro: #b7c6b1;
+}
+
+.bloco--faixa::before {
+  background: #324b30;
+  border: 0;
+}
+
+/* ── Botões: filete fino, caixa-alta espaçada, preenchimento que desliza ── */
+.btn-primario,
+.btn-secundario,
+.btn-claro {
+  min-height: 50px;
+  padding: 0 34px;
+  font-size: 11.5px;
+  font-weight: 500;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  border-radius: 0;
+}
+
+.btn-claro--grande {
+  min-height: 54px;
+  padding: 0 38px;
+  font-size: 12px;
+}
+
+.btn-primario,
+.btn-secundario,
+.btn-claro {
+  transition: color 0.5s var(--ease-lento), border-color 0.5s var(--ease-lento);
+}
+
+.btn-primario:hover,
+.btn-secundario:hover,
+.btn-claro:hover,
+.btn-primario:focus-visible,
+.btn-secundario:focus-visible,
+.btn-claro:focus-visible {
+  transform: none;
+  box-shadow: none;
+}
+
+.btn-primario::before,
+.btn-secundario::before,
+.btn-claro::before {
+  transition: transform 0.7s var(--ease-lento);
+}
+
+.btn-secundario {
+  background: transparent;
+}
+
+.btn-secundario:hover {
+  background: transparent;
+  box-shadow: none;
+}
+
+.btn-primario:hover {
+  box-shadow: none;
+}
+
+.btn-claro:hover {
+  box-shadow: none;
+}
+
+/* ── Imagens: sem sombra, sem salto; só a luz muda ── */
+.pc-foto {
+  box-shadow: none;
+}
+
+.pc-foto:hover,
+.pc-foto:focus-visible {
+  transform: none;
+  box-shadow: none;
+}
+
+.pc-foto img {
+  transition-duration: 1.4s;
+}
+
+.pc-nome {
+  font-weight: 500;
+  letter-spacing: 0.04em;
+}
+
+/* ── Janelas (cartões que abrem): branco, quinas retas, sombra funda e difusa ── */
+.janela-fundo {
+  background: rgba(18, 28, 17, 0.62);
+}
+
+/* ── Respiro entre seções ── */
+:root {
+  --secao-gap: clamp(88px, 11vw, 150px);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .btn-primario,
+  .btn-secundario,
+  .btn-claro,
+  .btn-primario::before,
+  .btn-secundario::before,
+  .btn-claro::before {
+    transition: none;
+  }
+}

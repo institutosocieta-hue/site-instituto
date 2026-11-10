@@ -1,0 +1,44 @@
+{
+  "linkEdital": "https://drive.google.com/file/d/1HPCbfgyjv88sYspW_UTot9ltkzXLdBVl/view?usp=drive_link",
+  "linkFormulario": "https://forms.gle/W15xDWdQp5yH5h8y6",
+  "paraQuem": [
+    "O perfil de membro é de quem já avançou na matéria, já tem familiaridade prática com o tema e frequenta a academia nesse âmbito.",
+    "Nosso papel é aguçar o interesse de quem já vive o Direito Empresarial, oferecendo um espaço de aprofundamento entre pares que compartilham esse estágio de formação."
+  ],
+  "semestre": [
+    {
+      "numeral": "I",
+      "titulo": "Entrada",
+      "texto": "O ingresso ocorre por seleção mensal e dá acesso à participação nos Encontros Horizontais, com frequência exigida, ao longo do período de vinculação."
+    },
+    {
+      "numeral": "II",
+      "titulo": "Núcleo",
+      "texto": "Os núcleos de estudo são o braço produtivo do Instituto: grupos temáticos itinerantes que se dedicam, a cada semestre, a um recorte específico do Direito Empresarial."
+    },
+    {
+      "numeral": "III",
+      "titulo": "Produção",
+      "texto": "Ao final do semestre, os membros entregam um resumo expandido, que dá origem a uma edição da QuotaParte."
+    },
+    {
+      "numeral": "IV",
+      "titulo": "Publicação e encontros",
+      "texto": "Esses recortes deságuam nos Encontros Horizontais, onde todos os integrantes se reúnem, independentemente do núcleo, para beber do conhecimento de especialistas na área."
+    }
+  ],
+  "faq": [
+    {
+      "pergunta": "Qual a diferença entre Membro Transitório e Membro Efetivo?",
+      "resposta": "Membro Transitório é a porta de entrada no Instituto Società. O ingresso ocorre por seleção mensal e dá acesso à participação nos Encontros Horizontais, com frequência exigida, ao longo do período de vinculação. Membro Efetivo é a condição plena de integrante da comunidade. Concede acesso amplo às atividades do Instituto e participação política nas decisões institucionais. A associação se dá por indicação de outro Membro Efetivo, respeitado o limite de uma indicação por semestre, ou por análise automática após um ano como Transitório. Ambas as condições compartilham a mesma exigência: presença qualificada, produção acadêmica e comprometimento com a comunidade."
+    },
+    {
+      "pergunta": "Com que frequência há processo seletivo?",
+      "resposta": "Há dois processos seletivos ativos, com calendários próprios. O processo para Membro Transitório ocorre mensalmente. As inscrições são ininterruptas, mediante formulário de inscrição acima, e as vagas são preenchidas conforme critérios institucionais de avaliação. O processo para Membro Efetivo ocorre semestralmente, nas janelas de julho e dezembro. O acesso a essa condição pressupõe um bom envolvimento enquanto membro transitório e a indicação por Membro Efetivo já vinculado. Em caso de ausência de indicação, o membro transitório entra em uma análise automática após um ano de permanência nesta condição."
+    },
+    {
+      "pergunta": "O Instituto forma estudantes de Direito Empresarial?",
+      "resposta": "Não. O Instituto Società não é uma instituição de ensino, e não se propõe a formar estudantes de Direito Empresarial: não temos essa ousadia. O perfil de membro é de quem já avançou na matéria, já tem familiaridade prática com o tema e frequenta a academia nesse âmbito. Nosso papel é aguçar o interesse de quem já vive o Direito Empresarial, oferecendo um espaço de aprofundamento entre pares que compartilham esse estágio de formação."
+    }
+  ]
+}

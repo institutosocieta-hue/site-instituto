@@ -1,0 +1,72 @@
+{
+  "itens": [
+    {
+      "numero": 1,
+      "nucleo": "Fundos de Investimento",
+      "semestre": "2026/1",
+      "dataPublicacao": null,
+      "linhaPesquisa": "Estrutura jurídica e regulação dos fundos de investimento no Brasil, com enfoque na Resolução CVM 175",
+      "coordenacao": "Caio Oliveira",
+      "chamada": "Estrutura jurídica e regulação dos fundos de investimento no Brasil, com enfoque na Resolução CVM 175",
+      "subtitulo": "[Linha técnica explicando o recorte temático]",
+      "textoConexao": "A nova arquitetura regulatória trazida pela Resolução CVM 175 reorganiza a forma como os fundos de investimento se estruturam no Brasil, redesenhando limites de responsabilidade, governança e segregação patrimonial. Este número reúne os resumos expandidos produzidos pelo núcleo ao longo do semestre sobre esse novo arranjo normativo.",
+      "capa": "/capas/ed01-fundos.svg",
+      "linkDrive": null,
+      "issn": null,
+      "trabalhos": [
+        {
+          "slug": "ed01-trabalho-1",
+          "titulo": "[Título do trabalho 1]",
+          "autor": "[Autor 1]",
+          "autores": [
+            "[Autor 1]"
+          ],
+          "nucleo": "Fundos de Investimento",
+          "resumo": null,
+          "palavrasChave": [],
+          "pdf": null,
+          "link": null
+        },
+        {
+          "slug": "ed01-trabalho-2",
+          "titulo": "[Título do trabalho 2]",
+          "autor": "[Autor 2]",
+          "autores": [
+            "[Autor 2]"
+          ],
+          "nucleo": "Fundos de Investimento",
+          "resumo": null,
+          "palavrasChave": [],
+          "pdf": null,
+          "link": null
+        },
+        {
+          "slug": "ed01-trabalho-3",
+          "titulo": "[Título do trabalho 3]",
+          "autor": "[Autor 3]",
+          "autores": [
+            "[Autor 3]"
+          ],
+          "nucleo": "Fundos de Investimento",
+          "resumo": null,
+          "palavrasChave": [],
+          "pdf": null,
+          "link": null
+        },
+        {
+          "slug": "ed01-trabalho-4",
+          "titulo": "[Título do trabalho 4]",
+          "autor": "[Autor 4]",
+          "autores": [
+            "[Autor 4]"
+          ],
+          "nucleo": "Fundos de Investimento",
+          "resumo": null,
+          "palavrasChave": [],
+          "pdf": null,
+          "link": null
+        }
+      ]
+    }
+  ]
+}

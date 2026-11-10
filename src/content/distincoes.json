@@ -1,0 +1,87 @@
+{
+  "excelencia": [],
+  "demais": [
+    {
+      "chave": "unita",
+      "nome": "Prêmio Unità",
+      "texto": "Unità, em italiano, significa unidade. A palavra deriva do latim unitas, formada a partir de unus: um. Distingue-se, contudo, da uniformidade: não designa aquilo que se apresenta homogêneo, mas aquilo que, sendo diverso, encontra convergência. É a qualidade do que se articula em torno de um propósito comum sem abrir mão da pluralidade que o compõe. O Prêmio Unità é a maior distinção semestral do Instituto e a mais disputada: concorrem a ele todos os membros, sem distinção de núcleo ou de vertical, e é a própria comunidade que decide, pelo voto, quem mais contribuiu para a articulação intelectual e a integração dos debates nos Encontros Horizontais. Os mais votados são classificados em primeiro, segundo e terceiro lugares. Vence quem promove o diálogo, conecta perspectivas distintas e eleva o nível coletivo das discussões: o membro cuja presença faz com que a comunidade pense melhor em conjunto."
+    },
+    {
+      "chave": "indice",
+      "nome": "Prêmio Índice",
+      "texto": "Índice, do latim index, indicis, significa aquilo que indica, aponta ou orienta. Na tradição erudita, designa o instrumento que organiza o conhecimento e permite localizá-lo com precisão. Por extensão, aplica-se àquilo, ou àquele, que serve de parâmetro, de referência estruturante para os demais. O Prêmio Índice distingue o membro que se destacou por profundo domínio técnico e especialização temática ao longo do semestre. É conferido a quem demonstra densidade argumentativa, consistência teórica e maturidade acadêmica em sua Vertical: o membro que se torna, para os colegas, ponto de referência dentro de sua área de estudo."
+    },
+    {
+      "chave": "iterare",
+      "nome": "Menção Iterare",
+      "texto": "Iterare, do latim, é o verbo que significa repetir, refazer, percorrer novamente o mesmo caminho. Dele derivam palavras como iteração e itinerário. Não se refere à repetição mecânica, mas à insistência deliberada: o ato voluntário de retornar ao percurso, refazê-lo com atenção renovada e, nessa constância, consolidar aquilo que só o tempo permite construir. A Menção Iterare é concedida aos membros que demonstram constância, disciplina e presença qualificada nos encontros do Instituto. Reconhece não apenas brilho pontual, mas dedicação contínua à construção do conhecimento coletivo: a qualidade daqueles cuja permanência estrutura a própria continuidade da comunidade."
+    }
+  ],
+  "ano": 2026,
+  "semestres": [
+    {
+      "semestre": "2026/1",
+      "label": "1º Semestre",
+      "resultados": {
+        "unita": {
+          "nome": "Valentina Duarte",
+          "foto": "/diretoria/valentina-duarte.png"
+        },
+        "indice": [
+          {
+            "nome": "Matheus Mazzoni",
+            "foto": "/diretoria/matheus-mazzoni.png",
+            "nucleo": "Fusões e Aquisições"
+          },
+          {
+            "nome": "Pedro Vieira",
+            "foto": "/diretoria/pedro-vieira.png",
+            "nucleo": "Insolvência Empresarial e Estabilidade do Sistema Econômico"
+          },
+          {
+            "nome": "Antônio Macêdo",
+            "foto": "/diretoria/antonio-macedo.png",
+            "nucleo": "Procedimento Arbitral"
+          },
+          {
+            "nome": "Estevan Rigon",
+            "foto": "/diretoria/estevan-rigon.png",
+            "nucleo": "Reestruturação no Agronegócio"
+          },
+          {
+            "nome": "Matheus Gonçalves",
+            "foto": "/diretoria/matheus-goncalves.png",
+            "nucleo": "Fundos de Investimento"
+          },
+          {
+            "nome": "Vitória Richetti",
+            "foto": "/diretoria/vitoria-richetti.png",
+            "nucleo": "Contencioso Societário"
+          }
+        ],
+        "iterare": [
+          "Antônio Macêdo",
+          "Eloísa Barichello Eckert",
+          "João Victor Rosa do Nascimento Bezerra",
+          "Lara Santiago de Barcellos",
+          "Lucas Cerqueira da Silva",
+          "Matheus Petry Gonçalves",
+          "Pedro Puente",
+          "Raíssa de Araújo Góes Souza",
+          "Sofia Oliveira Vollrath",
+          "Valentina de Avelar Duarte",
+          "Vitória Richetti"
+        ]
+      }
+    },
+    {
+      "semestre": "2026/2",
+      "label": "2º Semestre",
+      "resultados": {
+        "unita": null,
+        "indice": [],
+        "iterare": []
+      }
+    }
+  ]
+}
