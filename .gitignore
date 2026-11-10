@@ -17,3 +17,12 @@ Aprimoramento design Quotaparte
 
 # Configurações locais de ferramentas
 .claude
+
+# Arquivos soltos com espaço, acento ou símbolo no nome (não usados no site; a hospedagem recusa esses nomes)
+public/celulas/Esbo*
+public/celulas/Porto Alegre.png
+public/diretoria/Antonio Macedo.png
+public/diretoria/Eloisa Eckert.png
+public/encontro-mes/Confer*
+public/logo/Logo 2025
+public/youtube/episodios/Giacomo*
